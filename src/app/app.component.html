@@ -1,0 +1,15 @@
+<div>
+    <ul>
+        <li *ngFor="let file of files">
+            
+            <span id="file-label">
+                {{file.data.name}}
+            </span>
+        </li>
+    </ul>
+
+    <button (click)="onClick()">
+        Upload
+    </button>
+    <input type="file" #fileUpload id="fileUpload" name="fileUpload" multiple="multiple" accept="image/*" style="display:none;" />
+</div>
